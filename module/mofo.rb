@@ -1,7 +1,7 @@
 require 'msf/core'
 require '~/.msf4/external/forensic1394/bus.rb'
 
-class Metasploit3 < Msf::Exploit::Local
+class Metasploit3 < Msf::Auxillary
     # Rank = ExcellentRanking
 	def initialize(info = {})
         linuxStager=
@@ -134,7 +134,7 @@ class Metasploit3 < Msf::Exploit::Local
                     ],
 				],
 			'DefaultTarget'	=> 0,
-        	'DisclosureDate' => 'Long long ago', 
+        	'DisclosureDate' => 'Long long ago'
         ))
         register_options(
 			[
